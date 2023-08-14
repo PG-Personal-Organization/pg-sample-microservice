@@ -1,0 +1,9 @@
+<archetype>
+  <id>pg-sample-infrastructure-spring</id>
+  <sources>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/spring/config/ApplicationModuleConfiguration.java</source>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/spring/config/InfrastructureModuleConfiguration.java</source>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/spring/config/SwaggerConfiguration.java</source>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/spring/InfrastructureSpringModuleConfiguration.java</source>
+  </sources>
+</archetype>

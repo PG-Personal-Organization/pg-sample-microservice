@@ -1,0 +1,6 @@
+<archetype>
+  <id>pg-sample-domain</id>
+  <sources>
+    <source>src/main/java/org/pg/__artifactId__.domain/.keep</source>
+  </sources>
+</archetype>

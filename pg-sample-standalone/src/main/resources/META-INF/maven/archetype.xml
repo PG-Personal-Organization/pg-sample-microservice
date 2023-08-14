@@ -1,0 +1,7 @@
+<archetype>
+  <id>pg-sample-standalone</id>
+  <sources>
+    <source>src/main/java/org/pg/__artifactId__/standalone/StandaloneApplication.java</source>
+    <source>src/main/resources/application.yaml</source>
+  </sources>
+</archetype>

@@ -1,0 +1,6 @@
+<archetype>
+  <id>pg-sample-application-cqrs</id>
+  <sources>
+    <source>src/main/java/org/pg/__artifactId__/application/cqrs/.keep</source>
+  </sources>
+</archetype>

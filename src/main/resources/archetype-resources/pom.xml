@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.pg</groupId>
+        <artifactId>pg-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>pg-${artifactId}</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>pg-${artifactId} microservice</name>
+
+    <modules>
+        <module>pg-${artifactId}-application</module>
+        <module>pg-${artifactId}-domain</module>
+        <module>pg-${artifactId}-infrastructure</module>
+        <module>pg-${artifactId}-infrastructure-spring</module>
+        <module>pg-${artifactId}-integration-tests</module>
+        <module>pg-${artifactId}-standalone</module>
+    </modules>
+
+    <properties>
+        <org-pg-lib-cqrs-version>1.0.2</org-pg-lib-cqrs-version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Inner modules -->
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-application</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-domain</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-infrastructure</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-infrastructure-spring</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-integration-tests</artifactId>
+                <version>${version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg-${artifactId}-standalone</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <!-- Libraries -->
+            <dependency>
+                <groupId>org.pg</groupId>
+                <artifactId>pg.lib.cqrs</artifactId>
+                <version>${org-pg-lib-cqrs-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

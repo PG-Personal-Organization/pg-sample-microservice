@@ -1,0 +1,8 @@
+<archetype>
+  <id>pg-sample-infrastructure</id>
+  <sources>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/entity/.keep</source>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/repository/.keep</source>
+    <source>src/main/java/org/pg/__artifactId__/infrastructure/service/impl/.keep</source>
+  </sources>
+</archetype>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.pg</groupId>
+        <artifactId>pg-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>pg-sample-microservice</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Archetype - pg-sample-microservice</name>
+
+    <modules>
+        <module>pg-sample-application</module>
+        <module>pg-sample-domain</module>
+        <module>pg-sample-infrastructure</module>
+        <module>pg-sample-infrastructure-spring</module>
+        <module>pg-sample-integration-tests</module>
+        <module>pg-sample-standalone</module>
+    </modules>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>3.2.1</version>
+            </extension>
+        </extensions>
+    </build>
+
+</project>

@@ -1,0 +1,8 @@
+<archetype>
+  <id>pg-sample-integration-tests</id>
+  <testSources>
+    <source>src/test/java/org/pg/__artifactId__/integration/test/common/StandaloneIntegrationTest.java</source>
+    <source>src/test/java/org/pg/__artifactId__/integration/test/common/StandaloneTestConfiguration.java</source>
+    <source>src/test/resources/application-test.yaml</source>
+  </testSources>
+</archetype>
